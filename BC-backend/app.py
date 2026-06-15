@@ -8,8 +8,8 @@ CORS(app, origins="http://localhost:3000")
 def home():
     return "Welcome to Flask with Docker! This is the backend api route."
 
-@app.route('/this is a data route', methods=['GET'])
-def accept_friend_request():
+@app.route('/data', methods=['GET'])
+def example():
     
     return(jsonify({'data': 1}))
 
