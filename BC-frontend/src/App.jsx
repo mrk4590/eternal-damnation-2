@@ -3,6 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import funny from './assets/liberty kills lincoln.png'
+
+//imports for different pages
+import home from './pages/home'
+import vote from './pages/vote'
+import bet from './pages/bet'
+import meet from './pages/meet'
+import history from './pages/history'
+
 import './App.css'
 
 function App() {
