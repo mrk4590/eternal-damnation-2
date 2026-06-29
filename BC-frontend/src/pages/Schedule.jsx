@@ -20,6 +20,15 @@ export default function Schedule() {
           <span>Upcoming events and book schedules will appear here.</span>
         </div>
       </div>
+
+      <div className={styles.card}>
+        <h2 className={styles.sectionTitle}>Past Events</h2>
+
+        <div className={styles.emptyState}>
+          <p>No previous events available.</p>
+          <span>Past events will appear here.</span>
+        </div>
+      </div>
     </div>
   );
 }
