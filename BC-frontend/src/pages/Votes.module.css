@@ -1,0 +1,65 @@
+.container {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 2rem;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.backLink {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.card {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.sectionTitle {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.emptyState {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #666;
+}
+
+.emptyState p {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.emptyState span {
+  font-size: 0.95rem;
+}
