@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Schedule.module.css';
+import Button from '../components/button';
 
 export default function Schedule() {
   return (
@@ -10,6 +11,10 @@ export default function Schedule() {
         <Link to="/" className={styles.backLink}>
           ← Home
         </Link>
+      </div>
+
+      <div>
+        <Button>Click</Button>
       </div>
 
       <div className={styles.card}>
@@ -29,6 +34,16 @@ export default function Schedule() {
           <span>Past events will appear here.</span>
         </div>
       </div>
+
+      <div className={styles.card}>
+        <h2 className={styles.sectionTitle}>Past Events</h2>
+
+        <div className={styles.emptyState}>
+          <p>No previous events available.</p>
+          <span>Past events will appear here.</span>
+        </div>
+      </div>
+
     </div>
   );
 }
