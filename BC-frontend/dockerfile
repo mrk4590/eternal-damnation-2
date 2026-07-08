@@ -13,18 +13,28 @@ RUN npm install
 # Copy the rest of the app
 COPY . .
 
-# Build the app for production
-RUN npm run build
+# use port 3000 and run dev mode
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
 
+
+
+
+# ---------------------------------------
+# Save this part for production I suppose
+# ---------------------------------------
+
+# # Build the app for production
+# RUN npm run build
 
 # ---- Stage 2: Serve with Nginx ----
-FROM nginx:alpine
+# FROM nginx:alpine
 
-# Copy built files to Nginx
-COPY --from=builder /app/dist /usr/share/nginx/html
+# # Copy built files to Nginx
+# COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
+# # Expose port 80
+# EXPOSE 80
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# # Start Nginx
+# CMD ["nginx", "-g", "daemon off;"]

@@ -13,11 +13,16 @@ services:
     build: ./BC-frontend
     container_name: BC-react-frontend
     ports:
-      - "3000:80"
+      - "3000:3000"
     depends_on:
       - backend
     networks:
       - app-network
+    develop:
+      watch:
+        - path: ./BC-frontend/src
+          action: sync
+          target: /app/src
 
 networks:
   app-network:
