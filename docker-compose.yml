@@ -18,11 +18,11 @@ services:
       - backend
     networks:
       - app-network
-    develop:
-      watch:
-        - path: ./BC-frontend/src
-          action: sync
-          target: /app/src
+    # develop:
+    #   watch:
+    #     - path: ./BC-frontend/src
+    #       action: sync
+    #       target: /app/src
 
 networks:
   app-network:
