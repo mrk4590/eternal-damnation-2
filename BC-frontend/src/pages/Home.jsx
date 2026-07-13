@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
+import { setTheme } from '../../theme';
 
 const sections = [
   { to: '/schedule', title: 'Schedule', color: '#5B3A52' },
@@ -51,6 +52,8 @@ export default function Home() {
             </section>
           ))}
         </div>
+        <button onClick={e => {setTheme('light')}}>light</button>
+        <button onClick={e => {setTheme('dark')}}>dark</button>
       </div>
     </div>
   );

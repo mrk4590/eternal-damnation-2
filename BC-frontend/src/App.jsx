@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Bets from './pages/Bets';
@@ -7,9 +7,15 @@ import Votes from './pages/Votes';
 import Schedule from './pages/Schedule';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
+import { initTheme } from "../theme";
 import './theme.css';
 
 function App() {
+
+  // Read cookie once on mount and apply to <html>
+  useEffect(() => {
+    initTheme();
+  }, []);
 
   return (
     <BrowserRouter>
