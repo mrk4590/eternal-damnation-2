@@ -12,6 +12,14 @@ export default function Schedule() {
         </Link>
       </div>
 
+    <div className={styles.card}>
+        <h2 className={styles.sectionTitle}>Upcoming Events</h2>
+
+        <div className={styles.emptyState}>
+          <p>No scheduled events available.</p>
+          <span>Upcoming events and book schedules will appear here.</span>
+        </div>
+      </div>
 
       <div className={styles.card}>
         <h2 className={styles.sectionTitle}>Upcoming Events</h2>
