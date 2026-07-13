@@ -13,12 +13,7 @@ export default function Schedule() {
       </div>
 
     <div className={styles.card}>
-        <h2 className={styles.sectionTitle}>Upcoming Events</h2>
-
-        <div className={styles.emptyState}>
-          <p>No scheduled events available.</p>
-          <span>Upcoming events and book schedules will appear here.</span>
-        </div>
+        <h2 className={styles.sectionTitle}>+ New Meeting</h2>
       </div>
 
       <div className={styles.card}>
