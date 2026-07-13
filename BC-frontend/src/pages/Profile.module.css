@@ -17,6 +17,7 @@
   margin: 0;
   font-size: 2rem;
   font-weight: 700;
+  color: #444444;
 }
 
 .backLink {
@@ -46,6 +47,7 @@
   margin: 0 0 1.5rem;
   font-size: 1.25rem;
   font-weight: 600;
+  color: #444444;
 }
 
 .profileContent {
@@ -74,4 +76,20 @@
 .details p {
   margin: 0.5rem 0;
   color: #333;
+}
+
+.widgetContainer {
+  
+}
+
+.widget {
+  
+}
+
+.widgetTitle {
+  color: #444
+}
+
+.widgetContent {
+  color: #444
 }
