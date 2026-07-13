@@ -7,6 +7,7 @@ import Votes from './pages/Votes';
 import Schedule from './pages/Schedule';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
+import './theme.css';
 
 function App() {
 
