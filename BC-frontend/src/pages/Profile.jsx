@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import styles from './Profile.module.css';
 
 export default function Profile() {
-  const [username, setUsername] = useState('Loading...');
+  // const [username, setUsername] = useState('Loading...');
 
-  useEffect(() => {
-    fetch('https://api.ipify.org?format=json')
-      .then((res) => res.json())
-      .then((data) => setUsername(data.ip))
-      .catch(() => setUsername('Unknown User'));
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://api.ipify.org?format=json')
+  //     .then((res) => res.json())
+  //     .then((data) => setUsername(data.ip))
+  //     .catch(() => setUsername('Unknown User'));
+  // }, []);
+
+  const username = "SuperEpicGamer6769"
 
   return (
     <div className={styles.container}>
@@ -23,8 +25,6 @@ export default function Profile() {
       </div>
 
       <div className={styles.card}>
-        <h2 className={styles.sectionTitle}>Account Information</h2>
-
         <div className={styles.profileContent}>
           <div className={styles.avatar}>
             <span>{username[0] ?? 'U'}</span>
@@ -32,9 +32,55 @@ export default function Profile() {
 
           <div className={styles.details}>
             <p>
-              <strong>Username:</strong> {username + "👀 I know your IP..."}
+              <strong>Username:</strong> {username}
+            </p>
+            <p>
+              This is my witty catchphrase.
             </p>
           </div>
+        </div>
+      </div>
+
+
+      {/* potential widgets:
+            bets won
+            points earned
+            bet winrate
+            chosen nominations
+            participation count
+            current wallet
+
+            user review stuff (maybe not widgets):
+              favorite books
+              favorite genres
+              average rating
+
+          also include in here the leaderboard of course.
+       */}
+      <div className={styles.widgetContainer}>
+        <div className={styles.widget}>
+          <h1 className={styles.widgetTitle}>Bets Won</h1>
+          <p className={styles.widgetContent}>
+            more than you
+          </p>
+        </div>
+        <div className={styles.widget}>
+          <h1 className={styles.widgetTitle}>Chosen Nominations</h1>
+          <p className={styles.widgetContent}>
+            more than you
+          </p>
+        </div>
+        <div className={styles.widget}>
+          <h1 className={styles.widgetTitle}>Favorite Book</h1>
+          <p className={styles.widgetContent}>
+            more than you
+          </p>
+        </div>
+        <div className={styles.widget}>
+          <h1 className={styles.widgetTitle}>Another Cool Statistic</h1>
+          <p className={styles.widgetContent}>
+            more than you
+          </p>
         </div>
       </div>
     </div>
