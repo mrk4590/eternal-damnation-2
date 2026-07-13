@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styles from './Schedule.module.css';
-import Button from '../components/button';
 
 export default function Schedule() {
   return (
