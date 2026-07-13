@@ -15,6 +15,11 @@ export default function Schedule() {
 
 
       <div className={styles.card}>
+        <h2 className={styles.sectionTitle}>+ New Meeting</h2>
+      </div>
+
+
+      <div className={styles.card}>
         <h2 className={styles.sectionTitle}>Upcoming Events</h2>
 
         <div className={styles.emptyState}>
