@@ -39,6 +39,7 @@ export function initTheme() {
  */
 export function setTheme(layout) {
   setCookie(THEME_COOKIE_KEY, String(layout));
+  applyTheme(String(layout));
 }
 
 /**
