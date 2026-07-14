@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom';
 import styles from './Schedule.module.css';
+import React, { useState } from 'react';
+import Button from '../components/button';
 
 export default function Schedule() {
+
+  const [isOpen, setOpen] = React.useState(false);
+  
+  const handleClick = () => {
+      setOpen(!isOpen);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -12,10 +21,23 @@ export default function Schedule() {
         </Link>
       </div>
 
+
+
+    <div>
+        <Button onClick={handleClick}>+ New Meeting</Button>
+
+        {isOpen && (
+          <div className={styles.card}>Pop-up for meeting input</div>
+        )}
+      </div>
+
+
+
+
     <div className={styles.card}>
         <h2 className={styles.sectionTitle}>+ New Meeting</h2>
       </div>
-
+    
       <div className={styles.card}>
         <h2 className={styles.sectionTitle}>Upcoming Events</h2>
 
