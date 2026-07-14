@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import styles from './button.module.css';
 
 //state to control pop-up windows
 const Button = ({onClick, children}) => {
     return (
-        <button type="button" onClick={onClick}> 
+        <button className={styles.myButton} onClick={onClick}> 
             {children}
         </button>
     );

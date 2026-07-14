@@ -15,29 +15,29 @@ export default function Schedule() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>Schedule</h1>
-
         <Link to="/" className={styles.backLink}>
           ← Home
         </Link>
       </div>
 
 
+    {/* how to add new meeting information */}
 
-    <div>
+    <div style={{ display: "flex", justifyContent: "right" }}>
         <Button onClick={handleClick}>+ New Meeting</Button>
-
         {isOpen && (
-          <div className={styles.card}>Pop-up for meeting input</div>
+          <div className={styles.popupOverlay}>
+            <div className={styles.card}>
+              <h2>New Meeting Information</h2>
+              <div style={{ display: "flex", justifyContent: "right" }}>
+                <Button onClick={handleClick}>Close</Button>
+              </div>
+            </div>
+          </div>
         )}
       </div>
 
 
-
-
-    <div className={styles.card}>
-        <h2 className={styles.sectionTitle}>+ New Meeting</h2>
-      </div>
-    
       <div className={styles.card}>
         <h2 className={styles.sectionTitle}>Upcoming Events</h2>
 
