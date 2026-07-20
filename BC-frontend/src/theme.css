@@ -37,3 +37,14 @@
   --card: #676363;
   --rule: #3d3d3b;
 }
+
+[data-theme="hell"] {
+    --paper: #000000;
+  --paper-deep: #260100;
+  --ink: #1f1c19;
+  --muted: #766a5a;
+  --forest: #770f17;
+  --brass: #ffbd2e;
+  --card: #751c1c;
+  --rule: #e18c25;
+}

@@ -54,6 +54,7 @@ export default function Home() {
         </div>
         <button onClick={e => {setTheme('light')}}>light</button>
         <button onClick={e => {setTheme('dark')}}>dark</button>
+        <button onClick={e => {setTheme('hell')}}>hell</button>
       </div>
     </div>
   );
