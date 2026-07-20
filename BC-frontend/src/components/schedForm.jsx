@@ -26,21 +26,21 @@ function MultiInputForm() {
         type="text"
         name="Page Number"
         value={formData.readTo}
-        onChange={(e) => setFormData((prev) => ({ ...prev, readTo: e.target.value }))}
+        onChange={(e) => handleChange((prev) => ({ ...prev, readTo: e.target.value }))}
         placeholder="Page Number"
       />
       <input
         type="date"
         name="Date"
         value={formData.date}
-        onChange={(e) => setFormData((prev) => ({ ...prev, date: e.target.value }))}
+        onChange={(e) => handleChange((prev) => ({ ...prev, date: e.target.value }))}
         placeholder="Date"
       />
       <input
         type="time"
         name="Time"
         value={formData.time}
-        onChange={(e) => setFormData((prev) => ({ ...prev, time: e.target.value }))}
+        onChange={(e) => handleChange((prev) => ({ ...prev, time: e.target.value }))}
         placeholder="Time"
       />
       <button type="submit">Submit</button>
