@@ -7,13 +7,12 @@ function MultiInputForm() {
     time: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    // Dynamically update the object key matching the input name
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
+  const handleChange = (input) => {
+
+    //does some calculation or something
+
+    //then updates data
+    setFormData(input);
   };
 
   const handleSubmit = (e) => {
@@ -27,21 +26,21 @@ function MultiInputForm() {
         type="text"
         name="Page Number"
         value={formData.readTo}
-        onChange={handleChange}
+        onChange={(e) => setFormData((prev) => ({ ...prev, readTo: e.target.value }))}
         placeholder="Page Number"
       />
       <input
         type="date"
         name="Date"
         value={formData.date}
-        onChange={handleChange}
+        onChange={(e) => setFormData((prev) => ({ ...prev, date: e.target.value }))}
         placeholder="Date"
       />
       <input
         type="time"
         name="Time"
         value={formData.time}
-        onChange={handleChange}
+        onChange={(e) => setFormData((prev) => ({ ...prev, time: e.target.value }))}
         placeholder="Time"
       />
       <button type="submit">Submit</button>
