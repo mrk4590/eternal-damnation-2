@@ -1,0 +1,39 @@
+/* ============================================================================
+   theme.css — Global design for colors and stuff
+   ============================================================================ */
+
+
+/* ── Color tokens ─────────────────────────────────────────────────────────── */
+
+:root {
+  --paper: #efeae1;
+  --paper-deep: #e4dcc9;
+  --ink: #211d17;
+  --muted: #6b6255;
+  --forest: #2f4a3b;
+  --brass: #a9822f;
+  --card: #ffffff;
+  --rule: #d9d0bc;
+}
+
+[data-theme="light"] {
+    --paper: #efeae1;
+  --paper-deep: #e4dcc9;
+  --ink: #211d17;
+  --muted: #6b6255;
+  --forest: #2f4a3b;
+  --brass: #a9822f;
+  --card: #ffffff;
+  --rule: #d9d0bc;
+}
+
+[data-theme="dark"] {
+    --paper: #343230;
+  --paper-deep: #1b1a19;
+  --ink: #e5ceab;
+  --muted: #c3b39c;
+  --forest: #2f4a3b;
+  --brass: #a9822f;
+  --card: #676363;
+  --rule: #3d3d3b;
+}
