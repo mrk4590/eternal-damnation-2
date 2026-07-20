@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './Schedule.module.css';
 import React, { useState } from 'react';
 import Button from '../components/button';
+import MultiInputForm from '../components/schedForm';
 
 export default function Schedule() {
 
@@ -29,6 +30,7 @@ export default function Schedule() {
           <div className={styles.popupOverlay}>
             <div className={styles.card}>
               <h2>New Meeting Information</h2>
+              <MultiInputForm>New Meeting</MultiInputForm>
               <div style={{ display: "flex", justifyContent: "right" }}>
                 <Button onClick={handleClick}>Close</Button>
               </div>
