@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 import { setTheme } from '../../theme';
+import axios from 'axios';
 
 const sections = [
   { to: '/schedule', title: 'Schedule', color: '#5B3A52' },
   { to: '/votes', title: 'Votes', color: '#A9822F' },
   { to: '/bets', title: 'Bets', color: '#2F4A3B' },
 ];
+
+axios.get('http://localhost:5000/data').then((response) => {
+  console.log('response', response.data);
+});
 
 export default function Home() {
   return (
